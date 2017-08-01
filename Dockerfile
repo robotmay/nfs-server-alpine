@@ -21,4 +21,6 @@ COPY .bashrc /root/.bashrc
 
 RUN chmod +x /usr/bin/nfsd.sh /usr/bin/confd
 
+EXPOSE 2049
+
 ENTRYPOINT ["/usr/bin/nfsd.sh"]
